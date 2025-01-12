@@ -1,4 +1,4 @@
-# Home Assistant Community Add-on: Nginx Proxy Manager
+# heyFordy's CUSTOM Nginx Proxy Manager
 
 [![Release][release-shield]][release] ![Project Stage][project-stage-shield] ![Project Maintenance][maintenance-shield]
 

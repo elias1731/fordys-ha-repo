@@ -1,6 +1,4 @@
-# Home Assistant Community Add-on: Nginx Proxy Manager
-
-## Customized and re-uploaded by [ELIAS1731][elias]
+# heyFordy's CUSTOM Nginx Proxy Manager
 
 This add-on enables you to easily forward incoming connections to anywhere,
 including free SSL, without having to know too much about Nginx

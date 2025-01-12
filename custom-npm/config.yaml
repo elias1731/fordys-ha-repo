@@ -5,14 +5,14 @@ arch:
 - armv7
 - i386
 codenotary: codenotary@frenck.dev
-description: Elias Custom Nginx Proxy Manager
+description: heyFordy's Custom Nginx Proxy Manager
 hassio_api: true
 image: ghcr.io/hassio-addons/nginxproxymanager/{arch}
 init: false
 map:
 - ssl:rw
 - backup:rw
-name: Elias Custom NPM
+name: heyFordy's Custom NPM
 ports:
   80/tcp: 80
   81/tcp: 81
@@ -34,7 +34,7 @@ schema:
   reset_database: bool?
 services:
 - mysql:need
-slug: elias-custom-npm
-url: https://github.com/elias1731/elias-custom-ha-repo/
+slug: fordys-custom-npm
+url: https://github.com/elias1731/fordys-ha-repo/
 version: 0.12.2
 webui: http://[HOST]:[PORT:81]
