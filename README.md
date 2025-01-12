@@ -7,7 +7,7 @@ nothing special here. everything is quick dirty coding or simply copy/paste.
 
 Repo includes following add-ons:
 
-###  | [--> 1. Portainer Add-on](./portainer)
+###  | [1. Portainer Add-on](./portainer)
 
 [![GitHub Release][a01-releases-shield]][a01-releases]
 ![Project Stage][a01-project-stage-shield]
@@ -36,7 +36,7 @@ Repo includes following add-ons:
 
 ---
 
-### ['elias1731' CUSTOM nginx-proxy-manager Add-on](./custom-npm)
+### [2. 'elias1731' CUSTOM nginx-proxy-manager Add-on](./custom-npm)
 
 [![GitHub Release][a02-releases-shield]][a02-releases]
 ![Project Stage][a02-project-stage-shield]
