@@ -1,5 +1,4 @@
-{
-  "name": "heyFordy's custom home assistant repository",
-  "url": "https://github.com/elias1731/fordys-ha-repo",
-  "maintainer": "heyFordy"
-}
+# https://developers.home-assistant.io/docs/add-ons/repository#repository-configuration
+name: heyFordy's custom home assistant repository
+url: "https://github.com/elias1731/fordys-ha-repo"
+maintainer: heyFordy
