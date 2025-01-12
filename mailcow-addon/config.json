@@ -1,6 +1,6 @@
 {
   "name": "Mailcow Add-on",
-  "version": "1.0",
+  "version": "2025.1.0",
   "slug": "mailcow-addon",
   "description": "Ein Add-on zur Integration von Mailcow in Home Assistant.",
   "startup": "application",
