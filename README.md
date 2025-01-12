@@ -70,6 +70,14 @@ Old customized version of nginx proxy manager, not in use anymore. (replaced by 
 
 ---
 
+### [| 3. mailcow Add-on](./mailcow-addon)
+
+![Supports amd64 Architecture][a02-amd64-shield]
+
+Integration von Mailcow in Home Assistant.
+
+---
+
 ### [!TESTING! | everything CAN/WILL run unstable )
 
 I haven't done a single performance test so far tbh.. So.. fingers crossed ig :)  
