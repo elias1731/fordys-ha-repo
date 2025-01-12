@@ -32,7 +32,7 @@ Repo includes following add-ons:
 
 > Web-based mangement for local Docker environment.
 
-![The Portainer Hass.io add-on](images/A01/screenshot.png)
+![The Portainer Hass.io add-on](assets/portainer/screenshot.png)
 
 ---
 
@@ -61,7 +61,7 @@ Repo includes following add-ons:
 
 Old customized version of nginx proxy manager, not in use anymore. (replaced by cloudflare tunnel)
 
-![The Nginx Proxy Manager add-on](images/A02/screenshot.gif)
+![The Nginx Proxy Manager add-on](assets/npm/screenshot.gif)
 
 [Source on Github](https://github.com/hassio-addons/addon-nginx-proxy-manager)
 
