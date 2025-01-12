@@ -36,7 +36,7 @@ Repo includes following add-ons:
 
 ---
 
-### [2. 'elias1731' CUSTOM nginx-proxy-manager Add-on](./custom-npm)
+### [| 2. 'elias1731' CUSTOM nginx-proxy-manager Add-on](./custom-npm)
 
 [![GitHub Release][a02-releases-shield]][a02-releases]
 ![Project Stage][a02-project-stage-shield]
