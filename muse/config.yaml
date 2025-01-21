@@ -1,0 +1,24 @@
+{
+  "name": "Muse Discord Music Bot",
+  "version": "1.0",
+  "slug": "muse_discord_bot",
+  "description": "Muse Discord Music Bot als Home Assistant Add-on.",
+  "startup": "services",
+  "arch": ["amd64", "armv7", "arm64"],
+  "ports": {
+    "2333/tcp": 2333
+  },
+  "schema": {
+    "DISCORD_TOKEN": "str",
+    "YOUTUBE_API_KEY": "str",
+    "SPOTIFY_CLIENT_ID": "str",
+    "SPOTIFY_CLIENT_SECRET": "str"
+  },
+  "options": {
+    "DISCORD_TOKEN": "",
+    "YOUTUBE_API_KEY": "",
+    "SPOTIFY_CLIENT_ID": "",
+    "SPOTIFY_CLIENT_SECRET": ""
+  },
+  "image": "ghcr.io/museofficial/muse:latest"
+}
