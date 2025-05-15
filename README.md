@@ -39,9 +39,9 @@ Repo includes following add-ons:
 
 ---
 
-### [| 2. Muse Discord Music Bot](./muse)
+### [| 2. Fordy's Custom Mario Kart Wii Server](./mkwii-srv)
 
-Muse Discord Music Bot als Home Assistant Add-on.
+Ein MKWii-Server als Home Assistant Add-on.
 
 ---
 
@@ -49,7 +49,7 @@ Muse Discord Music Bot als Home Assistant Add-on.
 
 ![Supports amd64 Architecture][a02-amd64-shield]
 
-Integration von Mailcow in Home Assistant.
+W.I.P. - Integration von Mailcow in Home Assistant.
 
 ---
 
