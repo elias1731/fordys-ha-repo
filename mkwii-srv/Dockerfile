@@ -7,6 +7,10 @@ RUN git clone https://github.com/WiiLink24/wfc-server /opt/wfc-server
 
 WORKDIR /opt/wfc-server
 
+# Initialisiere Go-Modul und installiere Abhängigkeiten
+RUN go mod init wfc-server || true
+RUN go mod tidy
+
 # Baue den Server
 RUN go build -o wfc-server main.go
 

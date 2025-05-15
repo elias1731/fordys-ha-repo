@@ -1,8 +1,8 @@
 {
   "name": "WiiLink WFC Server",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "slug": "wiilink_wfc_server",
-  "description": "Lokaler WiiLink WFC Server mit PostgreSQL für Home Assistant",
+  "description": "Lokaler WiiLink WFC Server mit PostgreSQL für Home Assistant (gefixt)",
   "arch": ["amd64", "aarch64", "armv7"],
   "startup": "services",
   "boot": "auto",
