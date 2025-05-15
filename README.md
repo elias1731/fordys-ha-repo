@@ -1,59 +1,43 @@
-# fordys-ha-repo
+#
+# 🗿• fordys-ha-repo
 
 [![Open your Home Assistant instance and show the add add-on repository dialog with a specific repository URL pre-filled.](https://my.home-assistant.io/badges/supervisor_add_addon_repository.svg)](https://my.home-assistant.io/redirect/supervisor_add_addon_repository/?repository_url=https%3A%2F%2Fgithub.com%2Felias1731%2Ffordys-ha-repo)
 
-My (new) custom Home Assistant Repository
+My new (updated) Home Assistant Repository.
 
-nothing special here. everything is quick dirty coding or simply copy/paste.
+> nothing special here. everything is quick dirty coding or simply copy/paste.
 
-## Add-ons
+---
+
+## ⭐️ • Add-ons
 
 Repo includes following add-ons:
 
 ###  | [1. Portainer Add-on](./portainer)
 
-[![GitHub Release][a01-releases-shield]][a01-releases]
-![Project Stage][a01-project-stage-shield]
-[![License][a01-license-shield]](./LICENSES/A01.md)
-
-![Supports aarch64 Architecture][a01-aarch64-shield]
-![Supports amd64 Architecture][a01-amd64-shield]
-![Supports armhf Architecture][a01-armhf-shield]
-![Supports armv7 Architecture][a01-armv7-shield]
-![Supports i386 Architecture][a01-i386-shield]
-
-[![Github Actions][a01-github-actions-shield]][a01-github-actions]
-![Project Maintenance][a01-maintenance-shield]
-[![GitHub Activity][a01-commits-shield]][a01-commits]
-
-[![Discord][a01-discord-shield]][a01-discord]
-[![Community Forum][a01-forum-shield]][a01-forum]
-
-[![Sponsor Frenck via GitHub Sponsors][a01-github-sponsors-shield]][a01-github-sponsors]
-
-[![Support Frenck on Patreon][a01-patreon-shield]][a01-patreon]
+![Project Stage][a01-project-stage-shield][![License][a01-license-shield]](./LICENSES/A01.md)
 
 > Web-based mangement for local Docker environment.
 
 ![The Portainer Hass.io add-on](assets/portainer/screenshot.png)
 
+[![Sponsor Frenck via GitHub Sponsors][a01-github-sponsors-shield]][a01-github-sponsors]
 ---
 
 ### [| 2. Fordy's Custom Mario Kart Wii Server](./mkwii-srv)
 
-Ein MKWii-Server als Home Assistant Add-on.
+> A simple solution for a local instance of [**Wiimmfi**](https://wiimmfi.de/)'s Mario Kart Wii-Gameserver + pre-installed **DNS**-Server for compatibility with real Wii-/Wii-U-Consoles.
+#
+![AddonLogo](https://raw.githubusercontent.com/elias1731/fordys-ha-repo/refs/heads/main/mkwii-srv/logo.png)
 
 ---
 
 ### [| 3. mailcow Add-on](./mailcow-addon)
 
-![Supports amd64 Architecture][a02-amd64-shield]
-
-W.I.P. - Integration von Mailcow in Home Assistant.
-
----
-
-### [!TESTING! | everything CAN/WILL run unstable )
+### **⚠️ W.I.P.**
+> Install Mailcow in Home Assistant.
+#
+> [!TESTING! | everything CAN/WILL run unstable )
 
 I haven't done a single performance test so far tbh.. So.. fingers crossed ig :)  
 
