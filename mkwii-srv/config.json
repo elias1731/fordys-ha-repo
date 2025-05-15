@@ -1,7 +1,7 @@
 {
-  "name": "MKWii Private Server",
+  "name": "Fordy's Privater MKWii Server",
   "version": "1.0.0",
-  "slug": "mkwii_private_server",
+  "slug": "fordys_mkwii_srv",
   "description": "Privater Wiimmfi-Server für Mario Kart Wii mit DNS für echte Konsolen",
   "arch": ["amd64", "armv7", "aarch64"],
   "startup": "services",
