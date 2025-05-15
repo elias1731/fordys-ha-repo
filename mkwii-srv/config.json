@@ -1,0 +1,18 @@
+{
+  "name": "MKWii Private Server",
+  "version": "1.0.0",
+  "slug": "mkwii_private_server",
+  "description": "Privater Wiimmfi-Server für Mario Kart Wii mit DNS für echte Konsolen",
+  "arch": ["amd64", "armv7", "aarch64"],
+  "startup": "services",
+  "boot": "auto",
+  "ports": {
+    "53/udp": 53,
+    "80/tcp": 80,
+    "9000/tcp": 9000
+  },
+  "map": ["config:rw"],
+  "options": {},
+  "schema": {},
+  "host_network": true
+}
