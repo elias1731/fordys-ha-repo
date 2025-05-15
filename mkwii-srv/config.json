@@ -1,18 +1,17 @@
 {
-  "name": "Fordy's Privater MKWii Server",
+  "name": "WiiLink WFC Server",
   "version": "1.0.0",
-  "slug": "fordys_mkwii_srv",
-  "description": "Privater Wiimmfi-Server für Mario Kart Wii mit DNS für echte Konsolen",
-  "arch": ["amd64", "armv7", "aarch64"],
+  "slug": "wiilink_wfc_server",
+  "description": "Lokaler WiiLink WFC Server mit PostgreSQL für Home Assistant",
+  "arch": ["amd64", "aarch64", "armv7"],
   "startup": "services",
   "boot": "auto",
   "ports": {
-    "53/udp": 53,
     "80/tcp": 80,
     "9000/tcp": 9000
   },
+  "host_network": true,
   "map": ["config:rw"],
   "options": {},
-  "schema": {},
-  "host_network": true
+  "schema": {}
 }
