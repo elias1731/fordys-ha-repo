@@ -1,7 +1,7 @@
 {
   "name": "Discord Mario Kart Status",
   "version": "1.0.0",
-  "slug": "discord_mk_status",
+  "slug": "rwfc-discord-status",
   "description": "Zeigt den Status von MKWii-RR Freundescodes als Discord Rich Presence.",
   "startup": "application",
   "boot": "auto",
@@ -17,5 +17,5 @@
     "fc2": "str",
     "api_url": "str"
   },
-  "image": "local/discord_mk_status"
+  "image": "local/rwfc-discord-status"
 }
