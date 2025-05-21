@@ -1,7 +1,25 @@
-FROM python:3.11-slim
+ARG BUILD_FROM
+FROM $BUILD_FROM
 
-RUN pip install pypresence requests
+# Set shell
+SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 
-COPY run.py /run.py
+# Setup Python environment
+ENV LANG C.UTF-8
+ENV PYTHONUNBUFFERED 1
+ARG PYTHON_VERSION=3.11
 
-CMD ["python3", "/run.py"]
+RUN apk add --no-cache \
+    build-base \
+    python${PYTHON_VERSION} \
+    py${PYTHON_VERSION}-pip \
+    libffi-dev # Notwendig für discord.py cryptography
+
+# Install application requirements
+COPY rootfs/app/requirements.txt /
+RUN pip install --no-cache-dir -r /requirements.txt
+
+# Copy data for add-on
+COPY rootfs/ /
+
+CMD [ "python3", "/app/main.py" ]
