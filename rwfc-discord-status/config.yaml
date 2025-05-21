@@ -1,6 +1,6 @@
 name: "RWFC Discord Status"
 version: "0.1.0"
-slug: "rwfc_discord_status"
+slug: "rwfc-discord-status"
 description: "Updates a Discord Bot's status based on a Home Assistant sensor."
 arch:
   - armhf
