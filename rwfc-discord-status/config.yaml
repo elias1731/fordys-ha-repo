@@ -1,6 +1,6 @@
 name: "Discord Bot Status"
 version: "0.1.0"
-slug: "discord_bot_status"
+slug: "rwfc-discord-status"
 description: "Updates a Discord Bot's status based on a Home Assistant sensor."
 arch:
   - armhf
@@ -23,4 +23,4 @@ schema:
   update_interval: "int(30,)" # Mindestens 30 Sekunden
   activity_type: "list(playing|watching|listening|streaming|competing)"
   status_template: "str"
-image: "ghcr.io/{username}/{repository_slug}-{arch}" # Passe dies an dein GitHub Repo an
+image: "ghcr.io/elias1731/fordys-ha-repo/rwfc-discord-status" # Passe dies an dein GitHub Repo an
