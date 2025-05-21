@@ -19,4 +19,4 @@ export STATUS_TEMPLATE
 export SUPERVISOR_TOKEN=${SUPERVISOR_TOKEN} # Wichtig für HA API Zugriff
 
 # Starte das Python-Skript
-python3 /app/main.py
+python3 /main.py

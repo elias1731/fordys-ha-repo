@@ -16,10 +16,6 @@ RUN apk add --no-cache \
     libffi-dev # Notwendig für discord.py cryptography
 
 # Install application requirements
-COPY rootfs/app/requirements.txt /
 RUN pip install --no-cache-dir -r /requirements.txt
-
-# Copy data for add-on
-COPY rootfs/ /
 
 CMD [ "python3", "/app/main.py" ]
