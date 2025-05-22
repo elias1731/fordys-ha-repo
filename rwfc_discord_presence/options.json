@@ -1,0 +1,6 @@
+{
+  "ha_url": "https://ha.heyfordy.de",
+  "ha_token": "DEIN_LONG_LIVED_TOKEN",
+  "discord_app_id": "1374920758156984431",
+  "sensor_id": "sensor.rwfc_heyfordy"
+}
