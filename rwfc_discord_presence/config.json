@@ -1,0 +1,21 @@
+{
+  "name": "RWFC Discord Presence",
+  "version": "1.0.0",
+  "slug": "rwfc_discord_presence",
+  "description": "Zeigt den Status meines RWFC Sensors als Discord Rich Presence",
+  "startup": "application",
+  "boot": "auto",
+  "homeassistant": "2023.0.0",
+  "options": {
+    "ha_url": "",
+    "ha_token": "DEIN_LONG_LIVED_TOKEN",
+    "discord_app_id": "1374920758156984431",
+    "sensor_id": "sensor.rwfc_heyfordy"
+  },
+  "schema": {
+    "ha_url": "url",
+    "ha_token": "str",
+    "discord_app_id": "str",
+    "sensor_id": "str"
+  }
+}
