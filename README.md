@@ -24,18 +24,19 @@ Repo includes following add-ons:
 [![Sponsor Frenck via GitHub Sponsors][a01-github-sponsors-shield]][a01-github-sponsors]
 ---
 
-### [| 2. Fordy's Custom Mario Kart Wii Server](./mkwii-srv)
+### [| CUSTOM nginx-proxy-manager Add-on](./custom-npm)
 
-> A simple solution for a local instance of [**Wiimmfi**](https://wiimmfi.de/)'s Mario Kart Wii-Gameserver + pre-installed **DNS**-Server for compatibility with real Wii-/Wii-U-Consoles.
+> reverse proxy
+
 #
-![AddonLogo](https://raw.githubusercontent.com/elias1731/fordys-ha-repo/refs/heads/main/mkwii-srv/logo.png)
+![The Nginx Proxy Manager add-on](assets/npm/screenshot.gif)
+
 
 ---
 
-### [| 3. mailcow Add-on](./mailcow-addon)
+### [| HomeBridge Add-on](./homebridge)
 
-### **⚠️ W.I.P.**
-> Install Mailcow in Home Assistant.
+> old homebridge addon
 #
 > [!TESTING! | everything CAN/WILL run unstable )
 

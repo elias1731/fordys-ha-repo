@@ -1,7 +1,0 @@
-{
-  "discord_bot_token": "DEIN_DISCORD_BOT_TOKEN",
-  "sensor_entity_id": "sensor.aussen_temperatur",
-  "update_interval": 60,
-  "activity_type": "watching",
-  "status_template": "Außentemperatur: {state}°C"
-}
