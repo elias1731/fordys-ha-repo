@@ -1094,7 +1094,7 @@
 ||heads4-ak.spotify.com.edgesuite.net^$client='Elias\' Xbox'
 ! ============
 ! [# Wieder entsperrt, da Wiedergabe damit broken #]
-||audio-ak.spotify.com^$client='Elias\' Xbox'
+# --> ||audio-ak.spotify.com^$client='Elias\' Xbox'
 ! ============
 ||prod.spotify.map.fastlylb.net^$client='Elias\' Xbox'
 ||muster-sandbox.intercom.io^$client='Elias\' Xbox'
