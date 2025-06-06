@@ -1,5 +1,8 @@
 ! Title: Spotify Ad-Block for my Xbox
-
+!
+! [ W.i.P. AdGuard-Home Blocklist fuer
+!  den Spotify Client auf Xbox :) ]
+!
 ||sto3-outbound-a1.sto3.spotify.com^$client='Elias\' Xbox'
 ||c1.audio-ak.cdn.spotify.com^$client='Elias\' Xbox'
 ||c5.audio-ak.cdn.spotify.com^$client='Elias\' Xbox'
@@ -1089,7 +1092,10 @@
 ||pt.admob.com^$client='Elias\' Xbox'
 ||img.spotify.com^$client='Elias\' Xbox'
 ||heads4-ak.spotify.com.edgesuite.net^$client='Elias\' Xbox'
+! ============
+! [# Wieder entsperrt, da Wiedergabe damit broken #]
 ||audio-ak.spotify.com^$client='Elias\' Xbox'
+! ============
 ||prod.spotify.map.fastlylb.net^$client='Elias\' Xbox'
 ||muster-sandbox.intercom.io^$client='Elias\' Xbox'
 ||54.video-ak.cdn.spotify.com^$client='Elias\' Xbox'
