@@ -1,0 +1,30 @@
+FROM php:8.2-apache
+
+# Install system dependencies
+RUN apt-get update && apt-get install -y \
+    mariadb-server \
+    unzip \
+    wget \
+    libpng-dev \
+    libonig-dev \
+    libxml2-dev \
+    zip \
+    && docker-php-ext-install mysqli pdo pdo_mysql
+
+# YOURLS installieren
+ENV YOURLS_VERSION 1.9.2
+RUN wget https://github.com/YOURLS/YOURLS/archive/refs/tags/${YOURLS_VERSION}.zip && \
+    unzip ${YOURLS_VERSION}.zip && \
+    mv YOURLS-${YOURLS_VERSION} /var/www/html/yourls && \
+    rm ${YOURLS_VERSION}.zip
+
+# Konfig kopieren
+COPY run.sh /run.sh
+RUN chmod +x /run.sh
+
+# Apache Config
+RUN a2enmod rewrite
+
+EXPOSE 8080
+
+CMD ["/run.sh"]
