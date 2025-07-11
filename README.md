@@ -30,9 +30,12 @@ Repo includes following add-ons:
 
 #
 ![The Nginx Proxy Manager add-on](assets/npm/screenshot.gif)
-
-
 ---
+###  | [YOURLS Add-on](./yourls)
+
+> URL Shortener
+
+![yourls add-on](assets/yourls/logo.png)
 
 ### [| HomeBridge Add-on](./homebridge)
 
