@@ -1,0 +1,23 @@
+name: YOURLS
+version: "1.0.0"
+slug: yourls
+description: YOURLS mit eingebauter Datenbank im selben Container
+arch:
+  - amd64
+  - aarch64
+  - armv7
+startup: services
+boot: auto
+ingress: true
+ingress_port: 8080
+panel_icon: mdi:link-variant
+panel_title: YOURLS
+init: false
+ports:
+  8080/tcp: null
+options:
+  admin_user: admin
+  admin_password: changeme
+schema:
+  admin_user: str
+  admin_password: password
