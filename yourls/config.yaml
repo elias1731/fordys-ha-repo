@@ -1,5 +1,5 @@
 name: YOURLS
-version: "1.0.1"
+version: "1.0.2"
 slug: yourls
 description: YOURLS mit eingebauter Datenbank im selben Container
 arch:
