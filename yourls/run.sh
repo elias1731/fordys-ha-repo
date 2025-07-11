@@ -1,14 +1,25 @@
 #!/usr/bin/env bash
 set -e
 
-# MySQL starten
-service mysql start
+# Platzhalter ersetzen durch HA options
+CONFIG_PATH=/data/options.json
+ADMIN_USER=$(jq -r '.admin_user' "$CONFIG_PATH")
+ADMIN_PASSWORD=$(jq -r '.admin_password' "$CONFIG_PATH")
 
-# DB & User vorbereiten
-mysql -e "CREATE DATABASE IF NOT EXISTS yourls;"
-mysql -e "CREATE USER IF NOT EXISTS 'yourls'@'localhost' IDENTIFIED BY 'yourls';"
-mysql -e "GRANT ALL PRIVILEGES ON yourls.* TO 'yourls'@'localhost';"
-mysql -e "FLUSH PRIVILEGES;"
+# Auf MariaDB-Datenverzeichnis prüfen
+if [ ! -d "/var/lib/mysql/yourls" ]; then
+    echo "[INFO] Initialisiere MariaDB-Datenbank..."
+    mysql_install_db > /dev/null
+    mysqld_safe --skip-networking &
+    sleep 5
+
+    mysql -e "CREATE DATABASE yourls;"
+    mysql -e "CREATE USER 'yourls'@'localhost' IDENTIFIED BY 'yourls';"
+    mysql -e "GRANT ALL PRIVILEGES ON yourls.* TO 'yourls'@'localhost';"
+    mysql -e "FLUSH PRIVILEGES;"
+    killall mysqld
+    sleep 5
+fi
 
 # YOURLS config.php generieren
 cat <<EOF > /var/www/html/yourls/user/config.php
@@ -16,21 +27,20 @@ cat <<EOF > /var/www/html/yourls/user/config.php
 define('YOURLS_DB_USER', 'yourls');
 define('YOURLS_DB_PASS', 'yourls');
 define('YOURLS_DB_NAME', 'yourls');
-define('YOURLS_DB_HOST', 'localhost');
+define('YOURLS_DB_HOST', '127.0.0.1');
 define('YOURLS_SITE', 'http://localhost:8080/yourls');
 define('YOURLS_HOURS_OFFSET', 0);
 define('YOURLS_LANG', '');
 define('YOURLS_UNIQUE_URLS', true);
 \$yourls_user_passwords = array(
-  '${ADMIN_USER}' => '${ADMIN_PASSWORD}',
+  '$ADMIN_USER' => '$ADMIN_PASSWORD',
 );
 define('YOURLS_PRIVATE', true);
 define('YOURLS_COOKIEKEY', '$(head -c 64 /dev/urandom | base64)');
 ?>
 EOF
 
-# Rechte fixen
 chown -R www-data:www-data /var/www/html/yourls
 
-# Apache starten
-exec apache2-foreground
+# Supervisor starten (Apache + MariaDB)
+exec supervisord -c /etc/supervisord.conf
