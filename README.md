@@ -37,7 +37,7 @@ Repo includes following add-ons:
 > old homebridge addon
 ---
 
-###  | [Matter Add-on](./hamh)
+###  | [Matter Add-on](./chamh)
 
 > Home Assistant Matter Hub
 
