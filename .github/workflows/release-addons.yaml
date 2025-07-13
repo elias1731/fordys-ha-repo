@@ -1,7 +1,7 @@
 name: Release Home-Assistant-Matter-Hub
 on:
   repository_dispatch:
-    event_name: release-hamh
+    event_name: release-chamh
   workflow_dispatch:
     inputs:
       version:
@@ -14,8 +14,8 @@ on:
 env:
   repo_url: https://raw.githubusercontent.com/elias1731/ha-matter-addon
   repo_changelog: CHANGELOG.md
-  changelog_file: hamh/CHANGELOG.md
-  config_file: hamh/config.yaml
+  changelog_file: chamh/CHANGELOG.md
+  config_file: chamh/config.yaml
 
 jobs:
   release:
