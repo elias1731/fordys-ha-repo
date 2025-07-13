@@ -13,7 +13,7 @@ My new (updated) Home Assistant Repository.
 
 Repo includes following add-ons:
 
-###  | [1. Portainer Add-on](./portainer)
+###  | [Portainer Add-on](./portainer)
 
 ![Project Stage][a01-project-stage-shield][![License][a01-license-shield]](./LICENSES/A01.md)
 
@@ -31,15 +31,24 @@ Repo includes following add-ons:
 #
 ![The Nginx Proxy Manager add-on](assets/npm/screenshot.gif)
 ---
+
+### [| HomeBridge Add-on](./homebridge)
+
+> old homebridge addon
+---
+
+###  | [Matter Add-on](./hamh)
+
+> Home Assistant Matter Hub
+
+![matter add-on](assets/hamh/logo.png)
+---
+
 ###  | [YOURLS Add-on](./yourls)
 
 > URL Shortener
 
 ![yourls add-on](assets/yourls/logo.png)
-
-### [| HomeBridge Add-on](./homebridge)
-
-> old homebridge addon
 #
 > [!TESTING! | everything CAN/WILL run unstable )
 

@@ -51,7 +51,7 @@ LABEL \
     maintainer="Franck Nijhof <frenck@addons.community>" \
     org.label-schema.description="HomeKit support for your Home Assistant instance using Homebridge" \
     org.label-schema.build-date=${BUILD_DATE} \
-    org.label-schema.name="Homebridge" \
+    org.label-schema.name="OGhomebr" \
     org.label-schema.schema-version="1.0" \
     org.label-schema.url="https://community.home-assistant.io/t/community-hass-io-add-on-homebridge/33803?u=frenck" \
     org.label-schema.usage="https://github.com/hassio-addons/addon-homebridge/tree/master/README.md" \
