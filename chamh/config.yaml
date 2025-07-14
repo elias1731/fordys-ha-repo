@@ -1,6 +1,6 @@
 version: "3.0.0-alpha.87"
 image: ghcr.io/elias1731/ha-matter-addon
-slug: chamh
+slug: hamh
 name: 🌀 heyFordy's Matter-Hub
 description: Custom HAMH
 url: https://github.com/elias1731/ha-matter-addon
