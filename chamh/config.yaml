@@ -1,6 +1,6 @@
-version: "3.0.0-alpha.87"
-image: ghcr.io/elias1731/ha-matter-addon
-slug: hamh
+version: "3.0.0-alpha.87"ghcr.io/t0bst4r/home-assistant-matter-hub-addon
+image: ghcr.io/t0bst4r/home-assistant-matter-hub-addon
+slug: chamh
 name: 🌀 heyFordy's Matter-Hub
 description: Custom HAMH
 url: https://github.com/elias1731/ha-matter-addon
